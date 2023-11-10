@@ -1,0 +1,223 @@
+/* MENU */
+#menu {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    background: #000000;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 0;
+}
+
+#menu a {
+    display: block;
+    padding: 0 40px;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* Add a class for mobile navigation button */
+#menu-button {
+    display: none; /* Initially hide the button on larger screens */
+    background: #000000;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+	/* display: block; */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    #menu {
+        display: none; /* Hide the menu by default on mobile */
+    }
+
+    #menu-button {
+        display: block; /* Show the button on mobile screens */
+    }
+}
+/* Add a CSS class for the fixed header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000000;
+    font-size: 20px;
+    color: #FFFFFF;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Adjust padding or margin for the rest of the content to prevent overlapping */
+body {
+    margin-top: 70px; /* Adjust based on your header height */
+}
+
+
+/* rest of the page styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 0px 0;
+  
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+  color: #4070f4;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data{
+  margin-top: 30px;
+}
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+/* @media (max-width: 768px) {
+  .banner_text_iner {
+    margin-top: 100px;
+  }
+  .text h2 {
+    font-size: 40px;
+  }
+  .text h5 {
+    font-size: 16px;
+  }
+  .text p {
+    font-size: 14px;
+  }
+  .pic {
+    width: 200px;
+  }
+} */
+/* Default font size */
+body {
+  font-size: 16px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+
+        /* Header styles */
+        .header_section {
+            background-color: #242424; /* Dark background color */
+            padding: 15px 0; /* Add padding to the header for spacing */
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img {
+            width: 40px; /* Adjust the logo width */
+            margin-right: 10px; /* Add margin to separate logo and text */
+        }
+
+        .navbar-brand span {
+            color: #ffffff; /* White text color */
+            font-size: 24px; /* Adjust the font size */
+        }
+
+        .navbar-toggler .s-1 {
+            background-color: #ffffff; /* White color for the mobile menu button */
+        }
+
+        .navbar-toggler-icon {
+            background-color: #ffffff; /* White color for the mobile menu button icon */
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #ffffff; /* White text color for links in the header */
+            font-size: 18px; /* Adjust the font size */
+        }
+
+        .nav-link:hover {
+            color: #ff6600; /* Change link color on hover */
+        }
+    
+
+/* styles end */
+/* Styles for the header button */
+.menu-button {
+    /* background: #68696A; */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+/* Hover effect for the header button */
+.header-button:hover {
+    background: #68696A; /* Change the background color to gray */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow for a 3D effect */
+}
